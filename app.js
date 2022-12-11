@@ -57,9 +57,6 @@ function perso1() {
     $('#myVideo').attr('src', "./images/hell.mp4");
     $('#myVideoCard').attr('src', "./images/gold.mp4");
     $(".sticker").css('z-index','0');
-    titreCard.innerHTML = ""
-    description.textContent = ""
-    imgCard.style.backgroundImage = ''
     sticker[0].src = "./images/perso1.png"
     header.src = "./images/head.png"
     diams.src = "./images/diams2.png"
@@ -67,15 +64,15 @@ function perso1() {
     sticker[0].style.transition = "1s ease" 
     myName.src = "./images/name.png"
     desc.textContent = "My ax and unlimited power have made me a ruthless conqueror. I won't hesitate to use them to destroy you"
+    description.textContent = "My ax and unlimited power have made me a ruthless conqueror. I won't hesitate to use them to destroy you"
+    titreCard.innerHTML = "The Barbarian"
+    document.getElementById('imgCard').style.backgroundImage = `url(./images/perso1.png)`
 }
 
 function perso2() {
     $('#myVideo').attr('src', "./images/hell.mp4");
     $('#myVideoCard').attr('src', "./images/thunder.mp4");
     $(".sticker").css('z-index','0');
-    titreCard.innerHTML = ""
-    description.textContent = ""
-    imgCard.style.backgroundImage = ''
     sticker[0].src = "./images/necro.png"
     header.src = "./images/head.png"
     diams.src = "./images/diams2.png"
@@ -84,15 +81,15 @@ function perso2() {
     sticker[0].style.transition = "1s ease" 
     myName.src = "./images/name.png"
     desc.textContent = "The elemental forces are with me! I will annihilate anyone who gets in my way! Run away! Poor fools"
+    description.textContent = "The elemental forces are with me! I will annihilate anyone who gets in my way! Run away! Poor fools"
+    titreCard.innerHTML = "Necromancer"
+    document.getElementById('imgCard').style.backgroundImage = `url(./images/necro.png)`
 }
 
 function perso3() {
     $('#myVideo').attr('src', "./images/hell.mp4");
     $('#myVideoCard').attr('src', "./images/lights.mp4");
     $(".sticker").css('z-index','0');
-    titreCard.innerHTML = ""
-    description.textContent = ""
-    imgCard.style.backgroundImage = ''
     sticker[0].src = "./images/woman.png"
     header.src = "./images/head.png"
     diams.src = "./images/diams2.png"
@@ -101,15 +98,15 @@ function perso3() {
     sticker[0].style.transition = "1s ease" 
     myName.src = "./images/name.png"
     desc.textContent = "Unfortunate! I'm here to put an end to the forces of evil! My speed and strength will get the better of you"
+    description.textContent = "Unfortunate! I'm here to put an end to the forces of evil! My speed and strength will get the better of you"
+    titreCard.innerHTML = "Demon Hunter"
+    document.getElementById('imgCard').style.backgroundImage = `url(./images/woman.png)`
 }
 
 function persoMe() {
     $('#myVideo').attr('src', "./images/itback.mp4");
     $('#myVideoCard').attr('src', "./images/matrix.mp4");
     $(".sticker").css('z-index','0');
-    titreCard.innerHTML = ""
-    description.textContent = ""
-    imgCard.style.backgroundImage = ''
     sticker[0].src = "./images/fateh.png"
     header.src = "./images/headFateh.png"
     myName.src = "./images/nameFateh.png"
@@ -118,15 +115,15 @@ function persoMe() {
     sticker[0].style.transform = "scale(1.1)" 
     sticker[0].style.transition = "1s ease"
     desc.textContent = "👋 Hi, i'm Fateh, a french web developer passionate about programming and drawing. I created it with HTML CSS and jQuery"
+    description.textContent = "👋 Hi, i'm Fateh, a french web developer passionate about programming and drawing. I created it with HTML CSS and jQuery"
+    titreCard.innerHTML = "Web Developer"
+    document.getElementById('imgCard').style.backgroundImage = `url(./images/fateh2.png)`
 }
 
 function diablo() {
     $('#myVideo').attr('src', "./images/hell.mp4");
     $('#myVideoCard').attr('src', "./images/fire2.mp4");
     $(".sticker").css('z-index','0');
-    titreCard.innerHTML = ""
-    description.textContent = ""
-    imgCard.style.backgroundImage = ''
     sticker[0].src = "./images/diablo.png"
     header.src = "./images/head.png"
     sticker[0].style.filter = "brightness(1)" 
@@ -135,6 +132,9 @@ function diablo() {
     myName.src = "./images/name.png"
     diams.src = "./images/diams.png"
     desc.textContent = "Poor human! Do you dare to face me while I master the force of darkness? Approach! Let's finish in!"
+    description.textContent = "Poor human! Do you dare to face me while I master the force of darkness? Approach! Let's finish in!"
+    titreCard.innerHTML = "Malthael"
+    document.getElementById('imgCard').style.backgroundImage = `url(./images/diablo.png)`
 }
 
 $('.beforeCard').hover(function() {
@@ -158,31 +158,6 @@ $('.sticker').click(function() {
     document.getElementById('imgCard').style.backgroundImage = "url(./images/barbare.png)"
     document.getElementById('descCard').innerHTML = "My ax and unlimited power have made me a ruthless conqueror. I won't hesitate to use them to destroy you"
 });
-
-let values = $('.sticker')
-
-values.on('click', function() {
-    $.map(values, function(element) {
-        document.getElementById('imgCard').style.backgroundImage = `url(${element.src})`
-        if(element.src.indexOf("perso1") != -1 ) {
-            titreCard.innerHTML = "The Barbarian"
-            description.textContent = "My ax and unlimited power have made me a ruthless conqueror. I won't hesitate to use them to destroy you"
-        } else if(element.src.indexOf("fateh") != -1 ) {
-            document.getElementById('imgCard').style.backgroundImage = "url(./images/fateh2.png)"
-            titreCard.innerHTML = "Web Developer"
-            description.textContent = "👋 Hi, i'm Fateh, web developer passionate about programming and drawing. I created these maps with HTML CSS and jQuery"
-        } else if(element.src.indexOf("diablo") != -1 ) {
-            titreCard.innerHTML = "Malthael"
-            description.textContent = "Poor human! Do you dare to face me while i master the force of darkness? Approach! Let's finish in!"
-        } else if(element.src.indexOf("woman") != -1 ) {
-            titreCard.innerHTML = "Demon Hunter"
-            description.textContent = "Unfortunate! I'm here to put an end to the forces of evil! My speed and strength will get the better of you"
-        } else if(element.src.indexOf("necro") != -1 ) {
-            titreCard.innerHTML = "Necromancer"
-            description.textContent = "Humans, tremble with fear because know that even death fears me. You hear?"
-        }
-     });
-})
 
 var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 if (isIOS) {
