@@ -206,7 +206,7 @@ a {text-decoration: none; color: black;}
     font-weight: bold;
     color: white;
     padding-left: 0px;
-    font-size: 40px;
+    font-size: 60px;
     z-index: 0;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     text-shadow: 3px 3px 6px #ff0000;
@@ -222,7 +222,7 @@ a {text-decoration: none; color: black;}
     font-family: cursive;
     width: 30vw;
     margin: 40px 0px;
-    font-size: 3em;
+    font-size: 50px;
     z-index: 0;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     text-shadow: 1px 1px 1px #ff0000;
