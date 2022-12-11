@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diablo Live Cards</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./images/hell.mp4" type="video/mp4">
+    </video>
+
+    <div id="intro">
+        <video autoplay muted loop id="myVideo">
+            <source src="./images/lilith.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="leftSide">
+        <div id="titreCard"></div>
+        <div id="descCard"></div>
+    </div>
+
+    <div id="imgCard"></div>
+    <div id="container">
+
+        <div class="beforeCard">
+        <div class="card">
+
+            <video autoplay muted loop id="myVideoCard">
+                <source src="./images/fire.mp4" type="video/mp4">
+            </video>
+
+            <img loading="lazy" id="diams" src="./images/diams.png">
+            <img loading="lazy" id="name" src="./images/name.png">
+
+            <img id="imgSticker" loading="lazy" class="sticker" src="./images/diablo.png" width="80%" alt="">
+
+                <div class="head">
+                    <img loading="lazy" src="./images/head.png" class="head" id="header" alt="">
+                </div>
+                <div class="description">
+                    <p id="desc">My ax and unlimited power have made me a ruthless conqueror. I won't hesitate to use them to destroy you</p>
+                </div>
+                <div class="foot">
+                    <img loading="lazy" src="./images/foot.png" class="foot" alt="">
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="btn">
+        <div class="beforeAvatar">
+            <img loading="lazy" class="avatar" onclick="perso1()" src="./images/avatarPerso1.png" alt="">
+        </div>
+        <div class="beforeAvatar">
+            <img loading="lazy" class="avatar" onclick="perso3()" src="./images/avatarWoman.png" alt="">
+        </div>
+
+        <div class="beforeAvatar avatarCenter">
+            <img loading="lazy" class="avatar" onclick="diablo()" src="./images/avatarDiablo.png" alt="">
+        </div>
+
+        <div class="beforeAvatar">
+            <img loading="lazy" class="avatar" onclick="perso2()" src="./images/avatarNecro.png" alt="">
+        </div>
+        <div class="beforeAvatar">
+            <img loading="lazy" class="avatar" onclick="persoMe()" src="./images/avatar.png" alt="">
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        by <strong>@creazerty</strong> - <a href="">source code here 👋</a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
