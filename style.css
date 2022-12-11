@@ -206,7 +206,7 @@ a {text-decoration: none; color: black;}
     font-weight: bold;
     color: white;
     padding-left: 0px;
-    font-size: 6em;
+    font-size: 40px;
     z-index: 0;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     text-shadow: 3px 3px 6px #ff0000;
