@@ -149,16 +149,6 @@ $('.sticker').hover(function() {
     $('.btn').fadeTo(1,1)
 });
 
-$('.sticker').click(function() {
-    titreCard.innerHTML = ""
-    description.textContent = ""
-
-},function() {
-    titreCard.innerHTML = "Barbarian"
-    document.getElementById('imgCard').style.backgroundImage = "url(./images/barbare.png)"
-    document.getElementById('descCard').innerHTML = "My ax and unlimited power have made me a ruthless conqueror. I won't hesitate to use them to destroy you"
-});
-
 var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 if (isIOS) {
     document.location.href="./iospage.html";
